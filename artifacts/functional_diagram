@@ -1,0 +1,28 @@
+                                +-----------------------------------+
+                                |             ChessAgent            |
+                                |-----------------------------------|
+                                | - board (Board)                   |
+                                | - move_generator (MoveGenerator)  |
+                                | - evaluation (Evaluation)         |
+                                | - decide_best_move()              |
+                                +-----------------------------------+
+                                                  |
+                                                  v
+                            +---------------------------+
+                            |         Board             |
+                            |---------------------------|
+                            | - state (2D list of Pieces)| 
+                            | - get_piece_at_square()    |
+                            +---------------------------+
+                              /                       \
+             +--------------------------------+      +-------------------------------+
+             |          Piece (Base Class)    |      |       Metrics (Global)        |
+             |--------------------------------|      |-------------------------------|
+             | - position                     |      | - attacked_squares            |
+             | - calculate_attacked_squares() |      | - mobility                    |
+             | - calculate_value()            |      | - center_control              |
+             +--------------------------------+      | - material                    |
+                /           |          \            | - king_safety                 |
+         +--------+    +----------+   +--------+    | - defended_squares            |
+         |  Rook  |    |   Bishop  |   |  Knight |    +-------------------------------+
+         +--------+    +----------+   +--------+ 
