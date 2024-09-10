@@ -62,17 +62,6 @@ Here's a high-level overview of the classes and their relationships:
 
 #### **d. Metrics**
 - **Responsibility**: Stores and manages all evaluation metrics.
-- **Attributes** (JSON-like structure):
-  ```json
-  {
-    "
-
-
-
-
-It seems your message got cut off—let me continue!
-
-### **d. Metrics** (Attributes in JSON-like structure)
 This class will manage the game metrics and update them based on the position of each piece. Below is how the attributes could be organized:
 
 ```json
